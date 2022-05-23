@@ -1,0 +1,38 @@
+:root {
+    --main-color: orange;
+    --lightgoldenrodyellow: lightgoldenrodyellow;
+    --yellow: yellow;
+    --lightsalmon: lightsalmon;
+}
+
+.bg-orange {
+    background-color: var(--main-color);
+}
+
+.orange {
+    color: var(--main-color);
+}
+
+.border-orange {
+    border: 1px solid var(--main-color);
+}
+
+.border-bottom {
+    border-bottom: 1px solid var(--main-color) !important;
+}
+
+.bg-lightsalmon {
+    background-color: var(--lightsalmon);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}
+
+.bg-lightgoldenrodyellow {
+    background-color: var(--lightgoldenrodyellow)
+}
+.jumbotron {
+    background-color: white;
+}
+.pointer {cursor: pointer;}

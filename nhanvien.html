@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pizza 365</title>
+  
+  <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  
+  <!-- Import DataTable Library -->
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.24/css/dataTables.bootstrap4.min.css">
+  <script src="https://cdn.datatables.net/1.10.24/js/jquery.dataTables.min.js"></script>
+  <script src="https://cdn.datatables.net/1.10.24/js/dataTables.bootstrap4.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+  <script src="nhanvien.js"></script>
+  
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;"> Danh Sách Đơn Hàng</h2>
+        
+        <table class="table table-bordered table-striped table-hover " id ="table-order">
+            <thead>
+                <tr>
+                    <th>Order Id</th>
+                    <th>Kích cở compo</th>
+                    <th>Loại Pizza</th>
+                    <th>Nước uống</th>
+                    <th>Thành Tiền</th>
+                    <th>Họ và tên</th>
+                    <th>Số điện thoại</th>
+                    <th>Trạng Thái</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+    
+        </table>
+    </div>
+
+
+    <div id="detail-user-modal" class="modal fade" tabindex="-1" >
+        <div class="modal-dialog" >
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Chi Tiết</h5>
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div class="form-group col-12">
+                    </div>
+                    <div class="form-group">
+                        <label>ID</label>
+                        <input class="form-control" id="input-id" placeholder="...">
+                      </div>
+                    <div class="form-group">
+                      <label>order ID:</label>
+                      <input class="form-control" id="input-orderid" placeholder="...">
+                    </div>
+                    <div class="form-group">
+                        <label>Pizza Size:</label>
+                        <select id="select-pizzasize" class="form-control" type="text"></select>
+                    
+                    </div>
+
+                    <div class="form-group">
+                      <label>Đường kính </label>
+                      <input class="form-control" id="input-duongkinh" placeholder="...">
+                    </div>
+                    <div class="form-group">
+                      <label>Sườn</label>
+                      <input class="form-control" id="input-suon">
+                    </div>
+                    <div class="form-group">
+                      <label>Salad</label>
+                      <input class="form-control" id="input-salad">
+                    </div>
+                    <div class="form-group">
+                      <label>Pizza Type</label>
+                      <input class="form-control" id="input-pizzatype">
+                    </div>
+                    <div class="form-group">
+                      <label>Voucher ID</label>
+                      <input class="form-control" id="input-idvoucher">
+                    </div>
+                    <div class="form-group">
+                      <label>Thành tiền</label>
+                      <input class="form-control" id="input-thanhtien">
+                    </div>
+                    <div class="form-group">
+                      <label>Giảm giá</label>
+                      <input class="form-control" id="input-giamgia">
+                    </div>
+                    <div class="form-group">
+                      <label>Loại Đồ uống</label>
+                      <select id="select-drink" class="form-control" type="select"></select>
+                    </div>
+                    <div class="form-group">
+                      <label>Số lượng nước uống</label>
+                      <input class="form-control" id="input-soluongdrink">
+                    </div>
+                    <div class="form-group">
+                      <label>Họ và tên</label>
+                      <input class="form-control" id="input-fullname">
+                    </div>
+                    <div class="form-group">
+                      <label>Email</label>
+                      <input class="form-control" id="input-email">
+                    </div>
+                    <div class="form-group">
+                      <label>Số điện thoại</label>
+                      <input class="form-control" id="input-phone">
+                    </div>
+                    <div class="form-group">
+                      <label>Địa chỉ</label>
+                      <input class="form-control" id="input-address">
+                    </div>
+                    <div class="form-group">
+                      <label>Lời nhắn</label>
+                      <input class="form-control" id="input-message">
+                    </div>
+                    
+                    <div class="form-group">
+                      <label>Ngày tạo đơn</label>
+                      <input class="form-control" id="input-orderday">
+                    </div>
+                    <div class="form-group">
+                      <label>Ngày cập nhật</label>
+                      <input class="form-control" id="input-repairday">
+                    </div>
+                </form>
+                
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-group btn-success" id="btn-confirm" >Confirm</button>
+                <button class="btn btn-group btn-info" id ="btn-cancel">Cancel</button>
+            </div>
+          </div>
+        </div>
+    </div>
+    
+
+</body>
+
